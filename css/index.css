@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff;
+    transition: background 0.2s linear;
+  }
+  
+  /*light-dark mode toggle*/
+  body.dark, body.dark table, body.dark thead,
+  body.dark tbody, body.dark th, body.dark tr, 
+  body.dark td {
+    background-color: #000 !important;
+  }
+  
+  body.dark h1, body.dark h4, body.dark h5,
+  body.dark h6, body.dark hr, body.dark p,
+  body.dark ul, body.dark li {
+    color: #fff !important;
+  }
+
+  .theme-toggle {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .theme-toggle-label {
+    background-color: #111;
+    width: 50px;
+    height: 28px;
+    border: 1px solid #999;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
+  
+  .theme-toggle-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .theme-toggle:checked + .theme-toggle-label .ball {
+    transform: translateX(24px);
+  }
+/*light-dark mode toggle*/
+
+.nav-link{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+p{
+    text-align: justify;
+}
